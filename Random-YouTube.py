@@ -1,3 +1,8 @@
+# Pre-Reqs
+# pip3 install google-api-python-client
+# pip3 install emoji
+# pip3 install tweepy
+
 import datetime
 import tweepy
 import random
