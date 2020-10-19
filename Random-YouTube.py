@@ -1,25 +1,22 @@
-# Pre-Reqs
-# pip3 install google-api-python-client
-# pip3 install emoji
-# pip3 install tweepy
-
 import datetime
 import tweepy
 import random
 import emoji
+import os
 
-# Setup Twitter API Access
-consumer_key = 'xxxxxxxxxxxxxxx'
-consumer_secret = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
-access_token = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
-access_token_secret = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+# Setup Twitter API Access Using Secrets from Jenkins, otherwise add manually. Be careful !
+consumer_key = os.getenv("twit_cons_key")
+consumer_secret = os.getenv("twit_cons_sec")
+access_token = os.getenv("twit_acc_tok")
+access_token_secret = os.getenv("twit_acc_sec")
+
 # Configure Tweepy
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth)
 
 # Setup You Tube API Access
-api_key = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+api_key = os.getenv("api_key")
 from apiclient.discovery import build
 youtube = build('youtube', 'v3', developerKey=api_key)
 
@@ -50,7 +47,6 @@ def get_channel_videos(channel_id):
 # Construct tweet 
 def publictweet():
     
-    # The ID is for the techsnips channel
     videos = get_channel_videos('UCFgZ8AxNf1Bd1C6V5-Vx7kA')
     randomvideo = (random.choice(videos))
 
