@@ -1,12 +1,12 @@
 ## You Tube & Twitter
-### Random Notes to be organised
-Get access to You Tube API v3, create a project and then enable the API and generate a key
+### Random Notes to be organised   
+Get access to You Tube API v3, create a project and then enable the API and generate a key   
 
-Add You Tube client
-pip3 install google-api-python-client
-pip3 install emoji
-pip3 install tweepy
-pip3 install os 
+Add You Tube client   
+pip3 install google-api-python-client   
+pip3 install emoji   
+pip3 install tweepy   
+pip3 install os   
 
 Techsnips   
 'channelId': 'UCFgZ8AxNf1Bd1C6V5-Vx7kA'
