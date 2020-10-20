@@ -54,7 +54,7 @@ def publictweet():
     subtitle = "Another Great Video from TechSnips!\n @techsnips_io"
     video = randomvideo['snippet']['resourceId']['videoId']
     title = randomvideo["snippet"]["title"]
-    tweettopublish = title + "\nhttps://www.youtube.com/watch?v=" + video + "\n" + subtitle + emo
+    tweettopublish = title + "\nhttps://www.youtube.com/watch?v=" + video + "\n" + subtitle + emo + "\n" + "#techsnipsTuesday"
 
     api.update_status(tweettopublish)
     print(tweettopublish)
