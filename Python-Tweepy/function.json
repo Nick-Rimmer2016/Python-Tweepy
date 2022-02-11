@@ -1,0 +1,11 @@
+{
+  "scriptFile": "Random-YouTube.py",
+  "bindings": [
+    {
+      "name": "mytimer",
+      "type": "timerTrigger",
+      "direction": "in",
+      "schedule": "* * 7 2 * *"
+    }
+  ]
+}
