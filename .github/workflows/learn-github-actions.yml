@@ -7,7 +7,7 @@ env:
 
 on:
     schedule:
-        - cron: "30 17 * * WED" #runs at 08:00 UTC on a Tuesday
+        - cron: "0 18 * * WED" #runs at 08:00 UTC on a Tuesday
 jobs:
   build:
     runs-on: ubuntu-latest
