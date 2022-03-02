@@ -5,4 +5,3 @@
 datetime
 tweepy
 emoji
-os
