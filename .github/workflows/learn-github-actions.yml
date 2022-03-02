@@ -6,8 +6,9 @@ env:
   TWIT_ACC_SEC: ${{ secrets.TWIT_ACC_SEC}}
 
 on:
-    schedule:
-        - cron: "*/5 * * * *" #runs at 08:00 UTC on a Tuesday
+    push:
+    #schedule:
+        #- cron: "0 8 * * TUE" #runs at 08:00 UTC on a Tuesday
 jobs:
   build:
     runs-on: ubuntu-latest
