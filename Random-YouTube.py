@@ -3,16 +3,12 @@ import tweepy
 import random
 import emoji
 import os
-#from azure.keyvault.secrets import SecretClient
-#from azure.identity import DefaultAzureCredential
-
-#keyVaultName = os.environ["tsvault2021"]
 
 # Setup Twitter API Access Using Secrets from Jenkins, otherwise add manually. Be careful !
-consumer_key = os.getenv("twit_cons_key")
-consumer_secret = os.getenv("twit_cons_sec")
-access_token = os.getenv("twit_acc_tok")
-access_token_secret = os.getenv("twit_acc_sec")
+consumer_key = os.environ("twit_cons_key")
+consumer_secret = os.environ("twit_cons_sec")
+access_token = os.environ("twit_acc_tok")
+access_token_secret = os.environ("twit_acc_sec")
 
 # Configure Tweepy
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
