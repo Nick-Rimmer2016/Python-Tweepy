@@ -5,13 +5,13 @@ import emoji
 import os
 
 # Setup Twitter API Access Using Secrets from GitHub
-consumer_key = os.environ['TWIT_CONS_KEY']
-consumer_secret = os.environ['TWIT_CONS_SEC']
-access_token = os.environ['TWIT_ACC_TOK']
-access_token_secret = os.environ['TWIT_ACC_SEC']
+CONSUMER_KEY = os.environ['TWIT_CONS_KEY']
+CONSUMER_SECRET = os.environ['TWIT_CONS_SEC']
+ACCESS_TOKEN = os.environ['TWIT_ACC_TOK']
+ACCESS_TOKEN_SECRET = os.environ['TWIT_ACC_SEC']
 
 # Configure Tweepy to access Twitter
-auth = tweepy.OAuth1UserHandler(consumer_key, consumer_secret, access_token, access_token_secret)
+auth = tweepy.OAuth1UserHandler(CONSUMER_KEY,CONSUMER_SECRET,ACCESS_TOKEN,ACCESS_TOKEN_SECRET)
 #auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth)
 try:
@@ -22,9 +22,9 @@ except:
     print(consumer_key)
 
 # Setup You Tube API Access
-api_key = os.environ['API_KEY']
+API_KEY = os.environ['API_KEY']
 from apiclient.discovery import build
-youtube = build('youtube', 'v3', developerKey=api_key)
+youtube = build('youtube', 'v3', developerKey=API_KEY)
 
 # Retrieve a list of videos using channel ID (courtesy of @IndPythonnista)
 def get_channel_videos(channel_id):
