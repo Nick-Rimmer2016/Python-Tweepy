@@ -11,8 +11,8 @@ ACCESS_TOKEN = os.environ['TWIT_ACC_TOK']
 ACCESS_TOKEN_SECRET = os.environ['TWIT_ACC_SEC']
 
 # Configure Tweepy to access Twitter
-auth = tweepy.OAuth1UserHandler(CONSUMER_KEY,CONSUMER_SECRET,ACCESS_TOKEN,ACCESS_TOKEN_SECRET)
-#auth.set_access_token(access_token, access_token_secret)
+auth = tweepy.OAuth1UserHandler(CONSUMER_KEY,CONSUMER_SECRET)
+auth.set_access_token(ACCESS_TOKEN,ACCESS_TOKEN_SECRET)
 api = tweepy.API(auth)
 try:
     api.verify_credentials()
