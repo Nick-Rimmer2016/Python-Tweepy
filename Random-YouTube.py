@@ -5,10 +5,10 @@ import emoji
 import os
 
 # Setup Twitter API Access Using Secrets from GitHub
-CONSUMER_KEY = os.environ['API_KEY_TWITTER']
-CONSUMER_SECRET = os.environ['API_KEY_TWITTER_SECRET']
-ACCESS_TOKEN = os.environ['ACCESS_TOKEN']
-ACCESS_TOKEN_SECRET = os.environ['ACCESS_TOKEN_SECRET']
+CONSUMER_KEY = os.environ.get('API_KEY_TWITTER')
+CONSUMER_SECRET = os.environ.get('API_KEY_TWITTER_SECRET')
+ACCESS_TOKEN = os.environ.get('ACCESS_TOKEN')
+ACCESS_TOKEN_SECRET = os.environ.get('ACCESS_TOKEN_SECRET')
 
 # Configure Tweepy to access Twitter
 auth = tweepy.OAuth1UserHandler(CONSUMER_KEY,CONSUMER_SECRET)
