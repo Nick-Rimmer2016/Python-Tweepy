@@ -4,6 +4,7 @@ env:
   TWIT_CONS_SEC: ${{ secrets.TWIT_CONS_SEC }}
   TWIT_ACC_TOK: ${{ secrets.TWIT_ACC_TOK }}
   TWIT_ACC_SEC: ${{ secrets.TWIT_ACC_SEC }}
+  API_KEY: ${{ secrets.API_KEY}}
 
 on:
     push:
