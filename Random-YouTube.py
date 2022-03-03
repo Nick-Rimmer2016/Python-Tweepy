@@ -5,10 +5,10 @@ import emoji
 import os
 
 # Setup Twitter API Access Using Secrets from Jenkins, otherwise add manually. Be careful !
-consumer_key = os.environ("twit_cons_key")
-consumer_secret = os.environ("twit_cons_sec")
-access_token = os.environ("twit_acc_tok")
-access_token_secret = os.environ("twit_acc_sec")
+consumer_key = os.environ['twit_cons_key']
+consumer_secret = os.environ['twit_cons_sec']
+access_token = os.environ['twit_acc_tok']
+access_token_secret = os.environ['twit_acc_sec']
 
 # Configure Tweepy
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
