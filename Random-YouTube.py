@@ -11,7 +11,7 @@ ACCESS_TOKEN = os.environ.get('ACCESS_TOKEN')
 ACCESS_TOKEN_SECRET = os.environ.get('ACCESS_TOKEN_SECRET')
 
 # Configure Tweepy to access Twitter
-auth = tweepy.OAuth1UserHandler(CONSUMER_KEY,CONSUMER_SECRET)
+auth = tweepy.OAuthHandler(CONSUMER_KEY,CONSUMER_SECRET)
 auth.set_access_token(ACCESS_TOKEN,ACCESS_TOKEN_SECRET)
 api = tweepy.API(auth)
 try:
