@@ -44,7 +44,7 @@ def get_channel_videos(channel_id):
     
     return videos
 
-# Construct tweet 
+# Construct tweet to publish
 def publictweet():
     
     videos = get_channel_videos('UCFgZ8AxNf1Bd1C6V5-Vx7kA')
