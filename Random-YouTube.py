@@ -4,7 +4,7 @@ import random
 import emoji
 import os
 
-# Setup Twitter API Access Using Secrets from Jenkins, otherwise add manually. Be careful !
+# Setup Twitter API Access Using Secrets from GitHub
 consumer_key = os.environ['TWIT_CONS_KEY']
 consumer_secret = os.environ['TWIT_CONS_SEC']
 access_token = os.environ['TWIT_ACC_TOK']
