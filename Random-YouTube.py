@@ -16,7 +16,7 @@ auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth)
 
 # Setup You Tube API Access
-api_key = os.getenv("api_key")
+api_key = os.environ("API_KEY")
 from apiclient.discovery import build
 youtube = build('youtube', 'v3', developerKey=api_key)
 
