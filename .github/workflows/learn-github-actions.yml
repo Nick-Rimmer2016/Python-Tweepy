@@ -19,12 +19,12 @@ jobs:
           pip3 install -r requirements.txt
           
       - name: execute Random-YouTube script 
-        run: |
-          python Random-YouTube.py
         env:
             TWIT_CONS_KEY: ${{ secrets.TWIT_CONS_KEY }}
             TWIT_CONS_SEC: ${{ secrets.TWIT_CONS_SEC }}
             TWIT_ACC_TOK: ${{ secrets.TWIT_ACC_TOK }}
             TWIT_ACC_SEC: ${{ secrets.TWIT_ACC_SEC }}
             API_KEY: ${{ secrets.API_KEY}}
+        run: |
+          python Random-YouTube.py     
         
