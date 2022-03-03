@@ -19,7 +19,7 @@ try:
     print('Successful Authentication')
 except:
     print('Failed authentication')
-    print('consumer_key')
+    print(consumer_key)
 
 # Setup You Tube API Access
 api_key = os.environ['API_KEY']
