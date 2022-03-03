@@ -10,7 +10,7 @@ consumer_secret = os.environ['TWIT_CONS_SEC']
 access_token = os.environ['TWIT_ACC_TOK']
 access_token_secret = os.environ['TWIT_ACC_SEC']
 
-# Configure Tweepy
+# Configure Tweepy to access Twitter
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth)
