@@ -20,10 +20,10 @@ jobs:
           
       - name: execute Random-YouTube script 
         env:
-            TWIT_CONS_KEY: ${{ secrets.TWIT_CONS_KEY }}
-            TWIT_CONS_SEC: ${{ secrets.TWIT_CONS_SEC }}
-            TWIT_ACC_TOK: ${{ secrets.TWIT_ACC_TOK }}
-            TWIT_ACC_SEC: ${{ secrets.TWIT_ACC_SEC }}
+            TWIT_CONS_KEY: '${{ secrets.TWIT_CONS_KEY }}'
+            TWIT_CONS_SEC: '${{ secrets.TWIT_CONS_SEC }}'
+            TWIT_ACC_TOK: '${{ secrets.TWIT_ACC_TOK }}'
+            TWIT_ACC_SEC: '${{ secrets.TWIT_ACC_SEC }}'
             API_KEY: ${{ secrets.API_KEY}}
         run: |
           python Random-YouTube.py     
