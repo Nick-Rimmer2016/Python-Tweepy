@@ -11,14 +11,15 @@ ACCESS_TOKEN = os.environ.get('ACCESS_TOKEN')
 ACCESS_TOKEN_SECRET = os.environ.get('ACCESS_TOKEN_SECRET')
 
 # Configure Tweepy to access Twitter
-auth = tweepy.OAuthHandler(os.environ.get('API_KEY_TWITTER'),os.environ.get('API_KEY_TWITTER_SECRET'))
-auth.set_access_token(os.environ.get('ACCESS_TOKEN'),os.environ.get('ACCESS_TOKEN_SECRET'))
+auth = tweepy.OAuthHandler(CONSUMER_KEY,CONSUMER_SECRET)
+auth.set_access_token(ACCESS_TOKEN,ACCESS_TOKEN_SECRET)
 api = tweepy.API(auth)
 try:
     api.verify_credentials()
     print('Successful Authentication')
 except:
     print('Failed authentication')
+    print(CONSUMER_KEY)
 
 # Setup You Tube API Access
 API_KEY = os.environ['API_KEY']
