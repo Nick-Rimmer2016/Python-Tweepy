@@ -3,7 +3,7 @@ name: Run On Tuesday
 on:
   push:
   #schedule:
-    #- cron: '*/5 * * * *'
+    #- cron: "0 8 * * TUE" #runs at 08:00 UTC on a Tuesday
 
 jobs:
   build: 
@@ -14,7 +14,7 @@ jobs:
         with: 
           python-version: '3.7.5'
       - run: pip install -r requirements.txt
-      - run: python3 app.py 
+      - run: python3 Random-YouTube.py 
         env: 
           ACCESS_TOKEN:  ${{ secrets.ACCESS_TOKEN }}
           ACCESS_TOKEN_SECRET:  ${{ secrets.ACCESS_TOKEN_SECRET }}
