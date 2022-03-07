@@ -16,7 +16,6 @@ jobs:
           python-version: 3.7.5
       - name: Install requirements
         run: pip3 install -r requirements.txt
-          
       - name: execute Random-YouTube script
       - run:  python Random-YouTube.py     
         env:
@@ -24,6 +23,5 @@ jobs:
             ACCESS_TOKEN_SECRET: ${{ secrets.ACCESS_TOKEN_SECRET }}
             API_KEY_TWITTER: ${{ secrets.API_KEY_TWITTER }}
             API_KEY_TWITTER_SECRET: ${{ secrets.API_KEY_TWITTER_SECRET }}
-            API_KEY: ${{ secrets.API_KEY}}
-         
+            API_KEY: ${{ secrets.API_KEY}}       
         
