@@ -1,0 +1,23 @@
+name: Run On Tuesday
+
+on:
+  push:
+  #schedule:
+    #- cron: '*/5 * * * *'
+
+jobs:
+  build: 
+    runs-on: ubuntu-latest
+    steps: 
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with: 
+          python-version: '3.7.5'
+      - run: pip install -r requirements.txt
+      - run: python3 app.py 
+        env: 
+          ACCESS_TOKEN:  ${{ secrets.ACCESS_TOKEN }}
+          ACCESS_TOKEN_SECRET:  ${{ secrets.ACCESS_TOKEN_SECRET }}
+          API_KEY_TWITTER:  ${{ secrets.API_KEY_TWITTER }}
+          API_KEY_TWITTER_SECRET:  ${{ secrets.API_KEY_TWITTER_SECRET }}
+          API_KEY:  ${{ secrets.API_KEY}}      
