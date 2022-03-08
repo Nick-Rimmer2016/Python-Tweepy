@@ -8,7 +8,7 @@ pip3 install google-api-python-client
 pip3 install emoji     
 *Add tweepy*   
 pip3 install tweepy   
-* Add OS*   
+*Add OS*   
 pip3 install os   
 
 Techsnips   
