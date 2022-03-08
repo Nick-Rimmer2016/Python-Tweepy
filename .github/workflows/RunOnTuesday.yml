@@ -1,9 +1,8 @@
 name: Run On Tuesday
 
 on:
-  push:
-  #schedule:
-    #- cron: "0 8 * * TUE" #runs at 08:00 UTC on a Tuesday morning
+  schedule:
+    - cron: "0 8 * * TUE" #runs at 08:00 UTC on a Tuesday morning
 
 jobs:
   build: 
