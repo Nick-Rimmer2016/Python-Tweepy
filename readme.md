@@ -2,10 +2,13 @@
 ### Random Notes to be organised   
 Get access to You Tube API v3, create a project and then enable the API and generate a key   
 
-Add You Tube client   
-pip3 install google-api-python-client   
-pip3 install emoji   
+*Add You Tube client*   
+pip3 install google-api-python-client      
+*Add emoji to make it look nice !*   
+pip3 install emoji     
+*Add tweepy*   
 pip3 install tweepy   
+* Add OS*   
 pip3 install os   
 
 Techsnips   
