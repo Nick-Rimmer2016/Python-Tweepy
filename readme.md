@@ -1,6 +1,8 @@
 ## You Tube & Twitter
-### Random Notes to be organised   
-Get access to You Tube API v3, create a project and then enable the API and generate a key   
+
+Get access to You Tube API v3   
+Create a project and then enable the API and generate a key   
+Create a Twitter Developer Account   
 
 *Add You Tube client*   
 pip3 install google-api-python-client      
