@@ -34,3 +34,4 @@ Misc
 result = 
 for video in videos:
     print(video['snippet']['title'],video['snippet']['resourceId']['videoId'])
+    
