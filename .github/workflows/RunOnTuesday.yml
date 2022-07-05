@@ -1,4 +1,4 @@
-name: Run On Tuesday
+name: TechSnip Tuesday
 
 on:
   schedule:
